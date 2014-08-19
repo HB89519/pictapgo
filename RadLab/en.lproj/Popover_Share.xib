@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShareViewController">
+            <connections>
+                <outlet property="clipboardButton" destination="58" id="105"/>
+                <outlet property="facebookButton" destination="64" id="102"/>
+                <outlet property="instagramCropButton" destination="70" id="99"/>
+                <outlet property="instagramFloatButton" destination="66" id="Slc-0c-3sZ"/>
+                <outlet property="instagramWhiteButton" destination="68" id="100"/>
+                <outlet property="openInButton" destination="60" id="104"/>
+                <outlet property="renderedButton" destination="62" id="103"/>
+                <outlet property="saveRecipeButton" destination="140" id="164"/>
+                <outlet property="scrollView" destination="4" id="97"/>
+                <outlet property="twitterButton" destination="zJa-gT-XOQ" id="h8q-cO-c88"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="500"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="500"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="140" userLabel="Button - Save Recipe" customClass="PTGButton">
+                            <rect key="frame" x="8" y="8" width="304" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="304" id="148"/>
+                                <constraint firstAttribute="height" constant="40" id="151"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" title="Button" image="Button_SaveRecipe.png">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="doSaveReceipe:" destination="-1" eventType="touchUpInside" id="165"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="70" userLabel="Button - Instagram Crop" customClass="PTGButton">
+                            <rect key="frame" x="12" y="56" width="88" height="104"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="88" id="78"/>
+                                <constraint firstAttribute="height" constant="104" id="79"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" image="Button_InstagramCrop.png">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="shareDestinationCode" value="IgC"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="doShareInstagramCrop:" destination="-1" eventType="touchUpInside" id="107"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Instagram - Crop" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69">
+                            <rect key="frame" x="16" y="139" width="82" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="82" id="80"/>
+                                <constraint firstAttribute="height" constant="21" id="81"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="10"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68" userLabel="Button - Instagram Full" customClass="PTGButton">
+                            <rect key="frame" x="118" y="56" width="88" height="104"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="88" id="82"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" image="Button_InstagramFull.png">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="shareDestinationCode" value="IgW"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="doShareInstagramBorder:" destination="-1" eventType="touchUpInside" id="108"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Instagram - Full" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="67">
+                            <rect key="frame" x="122" y="139" width="82" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="82" id="83"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="10"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66" userLabel="Button - Instagram Float" customClass="PTGButton">
+                            <rect key="frame" x="224" y="56" width="88" height="104"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="88" id="84"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" image="Button_InstagramFloat.png">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="shareDestinationCode" value="Tw"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="doShareInstagramFloat:" destination="-1" eventType="touchUpInside" id="gLX-sp-KxK"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Instagram - Float" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65" userLabel="Label - Instagram - Float">
+                            <rect key="frame" x="228" y="139" width="82" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="82" id="85"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="10"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64" userLabel="Button - Facebook" customClass="PTGButton">
+                            <rect key="frame" x="12" y="166" width="88" height="104"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="104" id="86"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" image="Button_Facebook.png">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="shareDestinationCode" value="FB"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="doShareFacebook:" destination="-1" eventType="touchUpInside" id="110"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Facebook" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63">
+                            <rect key="frame" x="16" y="251" width="82" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="87"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="10"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62" userLabel="Button - Camera Roll" customClass="PTGButton">
+                            <rect key="frame" x="118" y="166" width="88" height="104"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" image="Button_CameraRoll.png">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="disabled" image="Button_CameraRollSel.png"/>
+                            <state key="selected" image="Button_CameraRollSel.png"/>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="shareDestinationCode" value="CR"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="doSaveRendered:" destination="-1" eventType="touchUpInside" id="111"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Camera Roll" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61">
+                            <rect key="frame" x="122" y="251" width="82" height="21"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="10"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60" userLabel="Button - Open In" customClass="PTGButton">
+                            <rect key="frame" x="224" y="166" width="88" height="104"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" image="Button_OpenIn.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="shareDestinationCode" value="OpI"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="doOpenIn:" destination="-1" eventType="touchUpInside" id="112"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Open In…" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59">
+                            <rect key="frame" x="228" y="251" width="84" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="84" id="88"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="10"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58" userLabel="Button - Clipboard" customClass="PTGButton">
+                            <rect key="frame" x="10" y="278" width="88" height="104"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="88" id="89"/>
+                                <constraint firstAttribute="height" constant="104" id="90"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" image="Button_CopyClip.png">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="disabled" image="Button_CopyClipSel.png"/>
+                            <state key="selected" image="Button_CopyClipSel.png"/>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="shareDestinationCode" value="Clp"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="doCopyToClipboard:" destination="-1" eventType="touchUpInside" id="113"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Clipboard" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57">
+                            <rect key="frame" x="16" y="363" width="82" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="91"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="10"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJa-gT-XOQ" userLabel="Button - Twitter" customClass="PTGButton">
+                            <rect key="frame" x="118" y="278" width="88" height="104"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="Button_Twitter.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="shareDestinationCode" value="Tw"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="doShareTwitter:" destination="-1" eventType="touchUpInside" id="dVi-nT-FdI"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Twitter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E24-rm-NKc" userLabel="Label - Twitter">
+                            <rect key="frame" x="122" y="363" width="82" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="10"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="62" firstAttribute="trailing" secondItem="68" secondAttribute="trailing" id="5"/>
+                        <constraint firstItem="62" firstAttribute="bottom" secondItem="64" secondAttribute="bottom" id="6"/>
+                        <constraint firstItem="62" firstAttribute="leading" secondItem="68" secondAttribute="leading" id="7"/>
+                        <constraint firstItem="62" firstAttribute="top" secondItem="64" secondAttribute="top" id="8"/>
+                        <constraint firstItem="60" firstAttribute="leading" secondItem="66" secondAttribute="leading" id="10"/>
+                        <constraint firstItem="60" firstAttribute="top" secondItem="62" secondAttribute="top" id="11"/>
+                        <constraint firstItem="60" firstAttribute="trailing" secondItem="66" secondAttribute="trailing" id="12"/>
+                        <constraint firstItem="60" firstAttribute="bottom" secondItem="62" secondAttribute="bottom" id="13"/>
+                        <constraint firstItem="59" firstAttribute="top" secondItem="61" secondAttribute="top" id="16"/>
+                        <constraint firstItem="59" firstAttribute="leading" secondItem="65" secondAttribute="leading" id="17"/>
+                        <constraint firstItem="59" firstAttribute="baseline" secondItem="61" secondAttribute="baseline" id="18"/>
+                        <constraint firstItem="59" firstAttribute="trailing" secondItem="60" secondAttribute="trailing" id="19"/>
+                        <constraint firstItem="67" firstAttribute="baseline" secondItem="69" secondAttribute="baseline" id="20"/>
+                        <constraint firstItem="67" firstAttribute="bottom" secondItem="68" secondAttribute="bottom" id="21"/>
+                        <constraint firstItem="67" firstAttribute="top" secondItem="69" secondAttribute="top" id="22"/>
+                        <constraint firstItem="57" firstAttribute="leading" secondItem="63" secondAttribute="leading" id="27"/>
+                        <constraint firstItem="69" firstAttribute="leading" secondItem="63" secondAttribute="leading" id="28"/>
+                        <constraint firstItem="69" firstAttribute="bottom" secondItem="70" secondAttribute="bottom" id="29"/>
+                        <constraint firstItem="61" firstAttribute="top" secondItem="63" secondAttribute="top" id="30"/>
+                        <constraint firstItem="61" firstAttribute="leading" secondItem="67" secondAttribute="leading" id="31"/>
+                        <constraint firstItem="61" firstAttribute="trailing" secondItem="67" secondAttribute="trailing" id="32"/>
+                        <constraint firstItem="61" firstAttribute="baseline" secondItem="63" secondAttribute="baseline" id="33"/>
+                        <constraint firstItem="63" firstAttribute="trailing" secondItem="69" secondAttribute="trailing" id="39"/>
+                        <constraint firstItem="65" firstAttribute="bottom" secondItem="66" secondAttribute="bottom" id="47"/>
+                        <constraint firstItem="65" firstAttribute="top" secondItem="67" secondAttribute="top" id="48"/>
+                        <constraint firstItem="65" firstAttribute="baseline" secondItem="67" secondAttribute="baseline" id="49"/>
+                        <constraint firstItem="64" firstAttribute="trailing" secondItem="70" secondAttribute="trailing" id="50"/>
+                        <constraint firstItem="64" firstAttribute="leading" secondItem="70" secondAttribute="leading" id="51"/>
+                        <constraint firstItem="58" firstAttribute="top" secondItem="64" secondAttribute="bottom" constant="8" symbolic="YES" id="54"/>
+                        <constraint firstItem="58" firstAttribute="trailing" secondItem="57" secondAttribute="trailing" id="55"/>
+                        <constraint firstItem="58" firstAttribute="trailing" secondItem="63" secondAttribute="trailing" id="56"/>
+                        <constraint firstItem="140" firstAttribute="top" secondItem="4" secondAttribute="top" constant="8" id="147"/>
+                        <constraint firstItem="140" firstAttribute="centerX" secondItem="4" secondAttribute="centerX" id="149"/>
+                        <constraint firstAttribute="trailing" secondItem="140" secondAttribute="trailing" constant="8" id="150"/>
+                        <constraint firstItem="70" firstAttribute="top" secondItem="140" secondAttribute="bottom" constant="8" symbolic="YES" id="152"/>
+                        <constraint firstItem="68" firstAttribute="top" secondItem="140" secondAttribute="bottom" constant="8" symbolic="YES" id="153"/>
+                        <constraint firstItem="67" firstAttribute="leading" secondItem="4" secondAttribute="leading" constant="122" id="154"/>
+                        <constraint firstItem="66" firstAttribute="trailing" secondItem="140" secondAttribute="trailing" id="155"/>
+                        <constraint firstItem="66" firstAttribute="top" secondItem="140" secondAttribute="bottom" constant="8" symbolic="YES" id="156"/>
+                        <constraint firstItem="57" firstAttribute="top" secondItem="4" secondAttribute="top" constant="363" id="157"/>
+                        <constraint firstItem="64" firstAttribute="top" secondItem="4" secondAttribute="top" constant="166" id="158"/>
+                        <constraint firstItem="63" firstAttribute="top" secondItem="4" secondAttribute="top" constant="251" id="159"/>
+                        <constraint firstAttribute="bottom" secondItem="57" secondAttribute="bottom" constant="116" id="160"/>
+                        <constraint firstItem="70" firstAttribute="leading" secondItem="4" secondAttribute="leading" constant="12" id="161"/>
+                        <constraint firstItem="58" firstAttribute="leading" secondItem="4" secondAttribute="leading" constant="10" id="162"/>
+                        <constraint firstItem="68" firstAttribute="leading" secondItem="4" secondAttribute="leading" constant="118" id="163"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="4" firstAttribute="top" secondItem="1" secondAttribute="top" id="92"/>
+                <constraint firstItem="4" firstAttribute="bottom" secondItem="1" secondAttribute="bottom" id="93"/>
+                <constraint firstItem="4" firstAttribute="trailing" secondItem="1" secondAttribute="trailing" id="94"/>
+                <constraint firstItem="4" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="95"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="Button_CameraRoll.png" width="176" height="208"/>
+        <image name="Button_CameraRollSel.png" width="176" height="208"/>
+        <image name="Button_CopyClip.png" width="176" height="208"/>
+        <image name="Button_CopyClipSel.png" width="176" height="208"/>
+        <image name="Button_Facebook.png" width="176" height="208"/>
+        <image name="Button_InstagramCrop.png" width="176" height="208"/>
+        <image name="Button_InstagramFloat.png" width="176" height="208"/>
+        <image name="Button_InstagramFull.png" width="176" height="208"/>
+        <image name="Button_OpenIn.png" width="176" height="208"/>
+        <image name="Button_SaveRecipe.png" width="608" height="80"/>
+        <image name="Button_Twitter.png" width="176" height="208"/>
+    </resources>
+</document>

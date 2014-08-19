@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ToolViewController"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="AspectRatios" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="441" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="661" userLabel="Button - 16:9">
+                    <rect key="frame" x="6" y="2" width="35" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="682"/>
+                        <constraint firstAttribute="height" constant="36" id="850"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" image="Aspect_16_9.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="doAspectSixteenNine:" destination="-1" eventType="touchUpInside" id="763"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="442" userLabel="Button - 3:2">
+                    <rect key="frame" x="47" y="2" width="35" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="783"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" image="Aspect_3_2.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="doAspectThreeTwo:" destination="-1" eventType="touchUpInside" id="765"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="630" userLabel="Button - 7:5">
+                    <rect key="frame" x="88" y="2" width="35" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="660"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" image="Aspect_7_5.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="doAspectSevenFive:" destination="-1" eventType="touchUpInside" id="764"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="585" userLabel="Button - 4:3">
+                    <rect key="frame" x="129" y="2" width="35" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="604"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" image="Aspect_4_3.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="doAspectFourThree:" destination="-1" eventType="touchUpInside" id="766"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="606" userLabel="Button - 5:4">
+                    <rect key="frame" x="170" y="2" width="35" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="622"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" image="Aspect_5_4.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="doAspectFiveFour:" destination="-1" eventType="touchUpInside" id="767"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="407" userLabel="Button - 1:1">
+                    <rect key="frame" x="211" y="2" width="35" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="584"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" image="Aspect_1_1.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="doAspectOneOne:" destination="-1" eventType="touchUpInside" id="768"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="342" userLabel="Button - 4:5">
+                    <rect key="frame" x="252" y="2" width="35" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="725"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" image="Aspect_4_5.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="doAspectFourFive:" destination="-1" eventType="touchUpInside" id="769"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="360" userLabel="Button - 3:4">
+                    <rect key="frame" x="289" y="2" width="35" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="734"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" image="Aspect_3_4.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="doAspectThreeFour:" destination="-1" eventType="touchUpInside" id="770"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="327" userLabel="Button - 5:7">
+                    <rect key="frame" x="326" y="2" width="35" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="793"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" image="Aspect_5_7.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="doAspectFiveSeven:" destination="-1" eventType="touchUpInside" id="772"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="384" userLabel="Button - 2:3">
+                    <rect key="frame" x="363" y="2" width="35" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="735"/>
+                        <constraint firstAttribute="height" constant="36" id="838"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" image="Aspect_2_3.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="doAspectTwoThree:" destination="-1" eventType="touchUpInside" id="771"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="307" userLabel="Button - 9:16">
+                    <rect key="frame" x="400" y="2" width="35" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="761"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" image="Aspect_9_16.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="doAspectNineSixteen:" destination="-1" eventType="touchUpInside" id="773"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="585" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="129" id="726"/>
+                <constraint firstItem="606" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="170" id="739"/>
+                <constraint firstItem="661" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="6" id="758"/>
+                <constraint firstItem="630" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="88" id="774"/>
+                <constraint firstItem="442" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="47" id="780"/>
+                <constraint firstItem="342" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="252" id="795"/>
+                <constraint firstItem="442" firstAttribute="bottom" secondItem="661" secondAttribute="bottom" id="804"/>
+                <constraint firstItem="442" firstAttribute="top" secondItem="661" secondAttribute="top" id="806"/>
+                <constraint firstItem="630" firstAttribute="bottom" secondItem="442" secondAttribute="bottom" id="810"/>
+                <constraint firstItem="630" firstAttribute="top" secondItem="442" secondAttribute="top" id="811"/>
+                <constraint firstItem="585" firstAttribute="bottom" secondItem="630" secondAttribute="bottom" id="814"/>
+                <constraint firstItem="585" firstAttribute="top" secondItem="630" secondAttribute="top" id="815"/>
+                <constraint firstItem="606" firstAttribute="top" secondItem="585" secondAttribute="top" id="821"/>
+                <constraint firstItem="606" firstAttribute="bottom" secondItem="585" secondAttribute="bottom" id="822"/>
+                <constraint firstItem="407" firstAttribute="bottom" secondItem="606" secondAttribute="bottom" id="824"/>
+                <constraint firstItem="407" firstAttribute="top" secondItem="606" secondAttribute="top" id="825"/>
+                <constraint firstItem="342" firstAttribute="top" secondItem="407" secondAttribute="top" id="830"/>
+                <constraint firstItem="342" firstAttribute="bottom" secondItem="407" secondAttribute="bottom" id="831"/>
+                <constraint firstItem="360" firstAttribute="top" secondItem="342" secondAttribute="top" id="835"/>
+                <constraint firstItem="360" firstAttribute="bottom" secondItem="342" secondAttribute="bottom" id="837"/>
+                <constraint firstItem="327" firstAttribute="bottom" secondItem="360" secondAttribute="bottom" id="840"/>
+                <constraint firstItem="327" firstAttribute="top" secondItem="360" secondAttribute="top" id="842"/>
+                <constraint firstItem="384" firstAttribute="bottom" secondItem="327" secondAttribute="bottom" id="844"/>
+                <constraint firstItem="384" firstAttribute="top" secondItem="327" secondAttribute="top" id="847"/>
+                <constraint firstItem="307" firstAttribute="bottom" secondItem="384" secondAttribute="bottom" id="848"/>
+                <constraint firstItem="307" firstAttribute="top" secondItem="384" secondAttribute="top" id="849"/>
+                <constraint firstAttribute="centerY" secondItem="661" secondAttribute="centerY" id="859"/>
+                <constraint firstItem="407" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="211" id="874"/>
+                <constraint firstAttribute="trailing" secondItem="307" secondAttribute="trailing" constant="6" id="875"/>
+                <constraint firstAttribute="trailing" secondItem="360" secondAttribute="trailing" constant="117" id="876"/>
+                <constraint firstAttribute="trailing" secondItem="327" secondAttribute="trailing" constant="80" id="877"/>
+                <constraint firstAttribute="trailing" secondItem="384" secondAttribute="trailing" constant="43" id="878"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="Aspect_16_9.png" width="70" height="72"/>
+        <image name="Aspect_1_1.png" width="70" height="72"/>
+        <image name="Aspect_2_3.png" width="70" height="72"/>
+        <image name="Aspect_3_2.png" width="70" height="72"/>
+        <image name="Aspect_3_4.png" width="70" height="72"/>
+        <image name="Aspect_4_3.png" width="70" height="72"/>
+        <image name="Aspect_4_5.png" width="70" height="72"/>
+        <image name="Aspect_5_4.png" width="70" height="72"/>
+        <image name="Aspect_5_7.png" width="70" height="72"/>
+        <image name="Aspect_7_5.png" width="70" height="72"/>
+        <image name="Aspect_9_16.png" width="70" height="72"/>
+    </resources>
+</document>

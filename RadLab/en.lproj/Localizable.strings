@@ -1,0 +1,264 @@
+/* 
+  Localizable.strings
+  RadLab
+
+  Created by Geoff Scott on 1/28/13.
+  Copyright (c) 2013 Totally Rad. All rights reserved.
+*/
+/* name of the + Contrast stylet */
+"+ Contrast"="+ Contrast";
+/* title of stylet on Save Recipe when more than 6 stylets used in the recipe */
+"+%d more steps"="+%d more steps";
+/* label for the photo grid when only 1 photo in the grid */
+"1 Photo"="1 Photo";
+/* label for the photo grid when n photos in the grid */
+"%d Photos"="%d Photos";
+
+/* title of the alert displaying a message about user account info */
+"Account Message"="Account Message";
+/* message when sharing operation cencelled */
+"Action Cancelled"="Action Cancelled";
+/* name of the Alabaster stylet */
+"Alabaster"="Alabaster";
+/* title text for simple alert messages to the user */
+"Alert"="Alert";
+/* name of the Auto Color stylet */
+"Auto Color"="Auto Color";
+/* name of the Auto Contrast stylet */
+"Auto Contrast"="Auto Contrast";
+
+/* name of the Brightside stylet */
+"Brightside"="Brightside";
+/* name of the Bleached stylet */
+"Bleached"="Bleached";
+
+/* name of the photo album Camera Roll, also label on Share button for saving the photo to the device */
+"Camera Roll"="Camera Roll";
+/* Cancel button text */
+"Cancel" = "Cancel";
+/* settings button title for clearing the styles applied history */
+"Clear History"="Clear History";
+/* text for confirming the setting to clear History */
+"Clear all History?"="Clear all History?";
+/* label on Share button for copying photo to device clipboard to paste into other apps */
+"Clipboard"="Clipboard";
+/* button title for Continue */
+"Continue"="Continue";
+/* message displayed when no apps found that can open a JPEG file */
+"Could not find any apps on this device registered to open JPEG images from another app."="Could not find any apps on this device registered to open JPEG images from another app.";
+/* message displayed when trying to open Instagram and it is not found */
+"Could not find Instagram installed on this device"="Could not find Instagram installed on this device";
+/* name of the Cool It Down stylet */
+"Cool It Down"="Cool It Down";
+/* notification when photo copied to clipboard on Go screen */
+"Copied to Clipboard"="Copied to Clipboard";
+/* button text for copying a recipe to the clipboard */
+"Copy Recipe to Clipboard"="Copy Recipe to Clipboard";
+/* name of the Crispity stylet */
+"Crispity"="Crispity";
+
+/* button text for Deleting a saved recipe */
+"Delete"="Delete";
+/* settings button title for deleteing all saved recipes */
+"Delete All Recipes"="Delete All Recipes";
+/* text for confirming the setting to delete all recipes */
+"Delete all Recipes?"="Delete all Recipes?";
+/* name of the Detroit stylet */
+"Detroit"="Detroit";
+/* name of the Dream World stylet */
+"Dream World"="Dream World";
+
+/* name of the Empty stylet */
+"Empty"="Empty";
+/* instructions in alert for renaming a recipe */
+"Enter new recipe name"="Enter new recipe name";
+/* name of the Equalize stylet */
+"Equalize"="Equalize";
+/* name of the EZ-Burn stylet */
+"EZ-Burn"="EZ-Burn";
+
+/* label on Share button for posting photo to Facebook */
+"Facebook"="Facebook";
+/* title of the alert displaying a message from Facebook service */
+"Facebook Message"="Facebook Message";
+/* name of the Faux-Fi stylet */
+"Faux-Fi"="Faux-Fi";
+/* name of the Flare Up stylet */
+"Flare Up"="Flare Up";
+/* name of the Flirt stylet */
+"Flirt"="Flirt";
+/* unlock alert message - Facebook */
+"Follow us on Facebook to unlock this free filter."="Follow us on Facebook to unlock this free filter.";
+/* unlock alert message - Instagram */
+"Follow us on Instagram to unlock this free filter."="Follow us on Instagram to unlock this free filter.";
+/* unlock alert message - Twitter */
+"Follow us on Twitter to unlock this free filter."="Follow us on Twitter to unlock this free filter.";
+/* unlock alert message - generic */
+"Follow us to unlock this filter set."="Follow us to unlock this filter set.";
+
+"Fade to Gray"="Fade to Gray";
+"Fade to Autumn"="Fade to Autumn";
+"Fade to Summer"="Fade to Summer";
+"Fade to Spring"="Fade to Spring";
+"Fade to Winter"="Fade to Winter";
+
+/* name of the Grainstorm stylet */
+"Grainstorm"="Grainstorm";
+
+/* name of the High Fives stylet */
+"High Fives"="High Fives";
+/* alert title for making a history a recipe */
+"History Options"="History Options";
+
+/* word appended to end of an album name if it is a Photo Stream (notice the space in front) */
+" iCloud"=" iCloud";
+/* button text for the Pic screen initial help */
+"I'm ready!"="I'm ready!";
+/* message displayed when a new recipe is imported from a URL */
+"Imported recipe"="Imported recipe";
+/* label on Share button for posting cropped photo to Instagram */
+"Instagram - Crop"="Instagram - Crop";
+/* label on Share button for posting photo with white borders and no crop to Instagram */
+"Instagram - Full"="Instagram - Full";
+
+/* button text for the 2nd Tap screen initial help */
+"Keep Tapping!"="Keep Tapping!";
+
+/* name of the L*ab Black & White stylet */
+"L*ab BW"="L*ab BW";
+/* button text for the Go screen initial help */
+"Let's Go!"="Let's Go!";
+/* name of the Lights On stylet */
+"Lights On"="Lights On";
+/* name of the Lights Out stylet */
+"Lights Out"="Lights Out";
+/* name of the Lux stylet */
+"Lux"="Lux";
+
+/* name of the Mama's Tap Shoes stylet */
+"Mama’s Tap Shoes"="Mama’s Tap Shoes";
+/* name of the Metropolis stylet */
+"Metropolis"="Metropolis";
+/* name of the Montecito stylet */
+"Montecito"="Montecito";
+/* title of the Album for the Photo Stream*/
+"My Photo Stream"="My Photo Stream";
+
+/* insturctions for saving a history as a recipe in alert dialog */
+"Name this recipe"="Name this recipe";
+/* suggested text in the rename recipe alert */
+"New Recipe Name"="New Recipe Name";
+/* No button text */
+"No"= "No";
+
+/* name of the Oh, Snap! stylet */
+"Oh, Snap!"="Oh, Snap!";
+/* OK button text */
+"OK"="OK";
+/* name of the Old Skool stylet */
+"Old Skool"="Old Skool";
+/* label on Share button for opening photo using other apps on the device */
+"Open In…"="Open In…";
+/* name of the Orange You Glad stylet */
+"Orange You Glad"="Orange You Glad";
+/* label when Original version of image shown */
+"Original"="Original";
+
+/* name of the Dot Screen / Paperboy stylet */
+"Paperboy"="Paperboy";
+/* name of the photo album Photo Library */
+"Photo Library"="Photo Library";
+/* name of the album photos are saved */
+"PicTapGo"="PicTapGo";
+/* name of the Pistachio stylet */
+"Pistachio"="Pistachio";
+/* prompt text when asking for the new recipe name */
+"Please enter the recipe name:" = "Please enter the recipe name:";
+/* name of the Portland stylet */
+"Portland"="Portland";
+/* name of the Pool Party stylet */
+"Pool Party"="Pool Party";
+/* label when Previous version of image shown */
+"Previous"="Previous";
+
+/* section text for the Recent recipes section */
+"Recent"="Recent";
+/* placeholder text in the recipe naming alert for the recipe name */
+"Recipe Name"="Recipe Name";
+/* alert title for renaming or deleting recipes */
+"Recipe Options"="Recipe Options";
+/* title of 2nd initial help display for Tap */
+"REFINE IT"="REFINE IT";
+/* button for renaming a recipe */
+"Rename"="Rename";
+/* alert title for renaming recipes */
+"Rename Recipe"="Rename Recipe";
+/* text for confirming the setting to Reset Help Messages */
+"Reset displaying initial help messages?"="Reset displaying initial help messages?";
+/* settings button title for resetting all the settings */
+"Reset Everything"="Reset Everything";
+/* settings button title for resetting the filter order of the styles in the filter group */
+"Reset Filter Order"="Reset Filter Order";
+/* settings button title for resetting showing the help messages */
+"Reset Help Messages"="Reset Help Messages";
+/* settings button title for restarting the style collection in My Style */
+"Reset My Style"="Reset My Style";
+/* text for confirming the setting to reset My Styles */
+"Reset “My Style”?"="Reset “My Style”?";
+/* text for confirming the setting to reset Filters order */
+"Reset order of Filters?"="Reset order of Filters?";
+
+/* name of the Salt + Pepper stylet */
+"Salt + Pepper"="Salt + Pepper";
+/* message in the recipe section when no recipes saved yet */
+"Save one or more filter recipes and they will appear here."="Save one or more filter recipes and they will appear here.";
+/* title of alert shown to get the name of the recipe being saved or the hostory state being saved as a recipe */
+"Save Recipe"="Save Recipe";
+/* notify message when photo saved to Camera Roll on Go screen */
+"Saved to Camera Roll"="Saved to Camera Roll";
+/* notify message to encourage applying more than one filter to an image */
+"Scroll again to add another filter."="Scroll again to add another filter.";
+/* title of initial help display for Tap */
+"SHARE IT"="SHARE IT";
+/* notify message when photo shared to Facebook on Go screen */
+"Shared to Facebook"="Shared to Facebook";
+/* notify message when photo shared to Twitter on Go screen */
+"Shared to Twitter"="Shared to Twitter";
+/* unlock alert message - mailing list */
+"Sign up for our mailing list to unlock this free filter."="Sign up for our mailing list to unlock this free filter.";
+/* name of the Simple Black & White stylet */
+"Simple BW"="Simple BW";
+/* name of the Skinny Jeans stylet */
+"Skinny Jeans"="Skinny Jeans";
+/* button text for the Tap screen initial help */
+"Start Tapping!"="Start Tapping!";
+/* title of initial help display for Tap */
+"STYLE IT"="STYLE IT";
+/* name of the Sugar Rush stylet */
+"Sugar Rush"="Sugar Rush";
+/* name of the Super Fun Happy stylet */
+"Super Fun Happy"="Super Fun Happy";
+/* name of the Sweet Tooth stylet */
+"Sweet Tooth"="Sweet Tooth";
+
+/* name of the Troy stylet */
+"Troy"="Troy";
+/* label on Share button for posting photo to Twitter */
+"Twitter"="Twitter";
+/* title of the alert displaying a message from Twitter service */
+"Twitter Message"="Twitter Message";
+
+/* name of the Vanilla Kiss stylet */
+"Vanilla Kiss"="Vanilla Kiss";
+
+/* name of the Warm It Up stylet */
+"Warm It Up"="Warm It Up";
+/* title of initial help display for Pic */
+"Welcome"="Welcome";
+
+/* Yes button text */
+"Yes" = "Yes";
+/* error message when no Facebook account set up on this device */
+"You have not setup a Facebook account. Please add an account to the Facebook settings in the Settings app."="You have not setup a Facebook account. Please add an account to the Facebook settings in the Settings app.";
+/* error message when no Twitter account set up on this device */
+"You have not setup a Twitter account. Please add an account to the Twitter settings in the Settings app."="You have not setup a Twitter account. Please add an account to the Twitter settings in the Settings app.";

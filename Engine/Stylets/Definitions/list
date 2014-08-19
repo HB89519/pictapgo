@@ -1,0 +1,82 @@
+100%                    [no symbol]
+90%                     9
+89%                     89
+...
+81%                     81
+80%                     8
+...
+20%                     2
+10%                     1
+0%                      0
+1%                      01
+2%                      02
+...
+9%                      09
+
+# Filter codes. First letter uppercase, all subsequent letters lowercase
+# NO DIGITS allowed (digits are reserved for strength, as above)
+# NO VOWELS allowed! (to avoid, e.g. FuCk)
+
+TRemptystylet.mm        Zz
+
+TRlightsoff.mm          D
+TRlightson.mm           L
+TRcoolasacucumber.mm    C
+TRwarmitupkris.mm       W
+TRequalize.mm           Q
+
+TRautocolor.mm          M
+TRautocontrast.mm       N
+TRpluscontrast.mm       S
+
+TRgrainstorm.mm         G
+
+TRezburn.mm             V
+
+TRlabbw.mm              Lb
+TRsimplebw.mm           Sb
+TRfadedautumn.mm        Fc
+TRfadedneutral.mm       Fn
+TRfadedsummer.mm        Fw
+TRbitchinbw.mm          Sp
+TRbullettooth.mm        Bt
+TRclaireify.mm          Br
+TRcrispity.mm           Cr
+TRdetroitbw.mm          Dt
+TRflareupgolden.mm      Fg
+TRflirt.mm              Fl
+TRgotham.mm             Mt
+TRgrandma.mm            Mm
+TRlofi.mm               Lf
+TRluxsoft.mm            Lx
+TRmagicalbw.mm          Mg
+TRmontecito.mm          Mc
+TRohsnap.mm             Sn
+TRoldskool.mm           Sk
+TRorangeyouglad.mm      Rg
+TRpistachio.mm          Ps
+TRpoolparty.mm          Pt
+TRportland.mm           Pr
+TRsfh.mm                Sf
+TRskinnyjeans.mm        Sj
+TRsugarrush.mm          Sr
+TRtdw.mm                Dw
+TRtroy.mm               Tr
+TRvanillakiss.mm        Vk
+TRvsco5.mm              Hf
+TRawake.mm              Wk
+
+TRterra.mm              Rr
+TRrandsburg.mm          Rb
+TRloft.mm               Ft
+TReternal.mm            Tn
+TRair.mm                Yr
+TRmason.mm              Ms
+TRpowder.mm             Pw
+
+
+TRboxblur.mm            #
+TRfindedges.mm          #
+TRgaussianblur.mm       #
+TRhighpass.mm           #
+TRsepia.mm              #

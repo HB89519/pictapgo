@@ -1,0 +1,74 @@
+Code Signing
+------------
+
+Because PicTapGo is an XCode project, signing PicTapGo for distribution is
+simpler than signing RadLab.  Simply follow the instructions at the Apple
+Developer website.
+
+You may find that your Certificate has expired, or the original Private Key
+used when generating the Certificate has been misplaced.  I have misplaced
+this Private Key more than once, because I didn't properly note the value
+of retaining it for later use.  You'll need that Private Key to unlock the
+Certificate when the time comes to sign your code.  Consider naming your
+private key something other than "Totally Rad! Inc"; maybe "Private Key for
+iPhone Developer Certificate".
+
+If you do remove the Private Key from your keychain, you can use Keychain
+Access to generate a new Private Key (remember to keep this new one safe, and
+distribute it to the trusted members of your team) and then use Keychain Access
+to request a new Certificate via the Apple Developer website, or by using
+XCode.  If you do this, you'll most likely want to revoke the old Certificate.
+
+Typically, I'd run into trouble when I would generate a Private Key on one
+machine, then later try to use the Certificate on another machine.  Apple keeps
+the Certificates on their Developer server, and you can freely download your
+Certificate from there to any machine.  HOWEVER, you can only USE the
+Certificate if you have the original Private Key.  You can maybe simplify this
+process by using only one machine for generating Private Keys and requesting
+Certificates.  As well, make sure you export and freshly-generated Private
+Keys and distribute them to trusted members of your team who may wish to use
+Certificates at some later date.
+
+As is always the case with cryptography, key management is the hardest
+problem!
+
+Recipe Format
+-------------
+
+PicTapGo recipes are formulated as syntactically valid URIs.  An example:
+
+   pictapgo://r/CrL5/Light%20Crispy
+
+The URI comprises four parts:
+
+   1) "pictapgo:" The URI scheme, registered with iOS by the App, to allow
+      other Apps to convey recipes into PicTapGo by tapping on the URL
+      (from email, for example).
+
+   2) "r" The "hostname" portion of the URI.  Designates this as a Recipe,
+      rather than some (hypothetical) other form of PicTapGo URI.
+
+   3) {recipe code} (i.e. "CrL5" in the example) The first segment of the
+      URI path.  The format of the code is described below
+
+   4) {name} (i.e. "Light%20Crispy" in the example) The second segment of
+      the URI path.  Any UTF8 string, percent-escaped to make it a valid URI
+
+The recipe code is patterned after chemical formula notation.  Each filter is
+an "element".  The first letter of each element code is capitalized; subsequent
+letters are lower-case.  (The formula parser expects only ASCII letters for
+codes.)  A strength value can appear after the code.  This will be 1-2 digits.
+The only notable oddity of this strength is that a single digit represents a
+multiple of 10 NOT a value between 1 and 9.  Thus L5 means "Lights On" 50%,
+NOT "Lights On" 5%!  When no strength is provided, 100% is implied.
+
+Recipes may be nested using parentheses.  For example "Cr(L5W)72Q" means
+to apply "Crispity" at 100% (call this step 1); then apply the pairing of
+"Lights On" 50% followed by "Warm it Up" to the result of step 1 (call this
+step 2); then take the result of step 2 and blend with the result of step 1
+at strength 72% (call this step 3); then apply "Equalize" 100% to the result
+of step 3.
+
+There's a script in the tr_stylet_store repo that will parse a PicTapGo
+recipe URI and tell what filters went into it.  This script is publicly
+available for use at http://stats.pictapgo.com/pictapgo/recipe.php

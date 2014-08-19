@@ -1,0 +1,450 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf190
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs22 \cf0 PicTapGo!\
+Release Notes for alpha, beta & release candidate builds\
+\
+\'a9 2012 - 2013 by Totally Rad! Inc. All rights reserved.\
+----\
+\
+version 1.5.0 build 162-164\
+- text and fix cycle for 1.5.0\
+\
+version 1.5.0 build 161\
+- adds In-App Purchase system\
+- adds Replichrome filter pack (10 new filters)\
+\
+version 1.4.2 build 160 (in progress)\
+\
+version 1.4.2 build 159\
+- build submitted to Apple\
+\
+version 1.4.2 build 158\
+- re-enable statistics ping\
+- change main thread performs back to way they were\
+- code clean up\
+- build to HockeyApp for beta testers\
+\
+version 1.4.2 build 157\
+- remove special title creation for iCloud albums\
+- move "My Photo Stream" album up in the list to sort below "Photo Library"\
+- build to HockeyApp for beta testers\
+\
+version 1.4.2 build 156\
+- force all notification handlers to use the main thread when responding\
+- remove the pinging of the stats server\
+- build to HockeyApp for beta testers\
+\
+version 1.4.2 build 155\
+- remove all the debug alerts\
+- re-enable Appirator\
+- add crash recovery back in\
+- perform notification responses on main thread\
+- build to HockeyApp for beta testers\
+\
+version 1.4.2 build 154\
+- removed a bunch of the debug alerts, but added a few, too\
+- new versions of HockeyApp, Appirator, CocoaLumberjack, TinyMT\
+- fix iPad Choose popover layout problem with the bottom background PNG (resized)\
+- remove Appirator\
+- build to HockeyApp beta testers\
+\
+version 1.4.2 build 153\
+- more debug alerts closer together during the loading of the assets\
+- build to HockeyApp for beta testers\
+\
+version 1.4.2 build 152\
+- reinstated the autoreleasepools and NSConditionalLocks\
+- add in debug alert messages\
+- build for HockeyApp beta testers\
+\
+version 1.4.2 build 151\
+- remove all autoreleasepools and NSConditionalLocks from the ChooseViewController\
+- build for HockeyApp beta testers\
+\
+version 1.4.2 build 150\
+- deeper disabling of crash recovery code\
+- build for HockeyApp beta testers\
+\
+version 1.4.2 build 149\
+- build for HockeyApp beta testers\
+\
+version 1.4.1 build 148\
+- removing the crash recovery code path. It seems to conflict somehow with iOS 7.\
+- re-enable Facebook SDK use\
+\
+version 1.4.1 build 147\
+- release build to Apple\
+\
+version 1.4.1 build 146\
+- beta release to HockeyApp\
+\
+version 1.4.1 build 145\
+- slider bug was not fixed (was not setting the alpha on afterImageView correctly)\
+\
+version 1.4.1 build 144\
+- beta release to HockeyApp adding a new tester\
+\
+version 1.4.1 build 143\
+- release build submitted to Apple\
+\
+version 1.4.1 build 142\
+- no changes\
+\
+version 1.4.1 build 141\
+- beta release to HockeyApp\
+\
+version 1.4.1 build 140\
+- removed code that unloaded the edit view (caused lots of crashes for iPad versions, may have caused lots of other crashes, too)\
+- fix for after image alpha value, which was being reset to 100% when header reloaded\
+\
+version 1.4.1 build 139\
+- beta release to HockeyApp\
+\
+version 1.4.1 build 138\
+- added settings switch for using a simple background instead of the blurred background\
+\
+version 1.4.0 build 137\
+- release build submitted to Apple\
+\
+version 1.4.1 build 136\
+- release build submitted to Apple\
+=> rejected by Apple because of version number change\
+\
+version 1.4.1 build 135\
+- beta build to HockeyApp\
+\
+version 1.4.1 build 134\
+- fixed Shared To problem on iPad that left buttons disabled when no stylet applied to new image\
+- cosmetic fixes for iPad translucent UI\
+- fix bug in iPad when doing crash recovery (no longer tries to segue to Share screen)\
+- make app 32 bit only for now, until Apple can support dual binaries for iOS 6\
+\
+version 1.4.0 build 133\
+- release build submitted to Apple\
+\
+version 1.4.0 build 132\
+- beta build to HockeyApp\
+\
+version 1.4.0 build 131\
+- replace recipe cell background with stylet cell background\
+\
+version 1.4.0 build 130\
+- submit to Apple\
+- fixed typo for "Instagram - Float"\
+\
+version 1.4.0 build 128\
+- removed the status bar from all builds to avoid iOS7 issue\
+\
+version 1.4.0 build 127\
+- new UI designed for iOS7\
+- Universal application (iPhone + iPad)\
+- new Instagram Float export button, like Full, but with a slight border around it.\
+\
+version 1.3.0 build 116\
+- new export/import all recipes features\
+- fixes to make unloading popovers smarter\
+\
+version 1.3.0 build 100\
+- new Go & Pic buttons for PicTapGo HD\
+- slight layout tweaks for PicTapGo HD\
+\
+version 1.2.2 build 88\
+- fix a thread-race in strength adjustment and filter undo\
+- add a stress test button (skull-and-crossbones on About screen)\
+  (runs forever, so if you use this you'd better know how to kill an App on your phone)\
+\
+version 1.2.2 build 86\
+- finalize some choices regarding unlockable filters (still need art)\
+\
+version 1.2.2 build 84\
+- improve debug messages appearing in crash reports (prefer NSAssert vs assert)\
+\
+version 1.2.2 build 82\
+- improve thumbnail rebuild rate when adjusting strength slider\
+- fix a rarely occurring but easily reproducible bug related to the save recipe screen\
+\
+version 1.2.2 build 80\
+- store nested-recipe temporary buffers "on disk" instead of in RAM\
+- change maximum image resolution based on device capabilities\
+\
+version 1.2.2 build 79\
+- when app enters foreground, don't reload Pic screen unless actually visible\
+- block any pending thumbnail renderers when app enters background\
+\
+version 1.2.2 build 76\
+- change thumbnail grid refresh implementation\
+  (attempts to fix "too many update animations on one view" exception from iOS 7\
+\
+version 1.2.2 build 75\
+- update to latest version of CocoaLumberjack logging framework\
+\
+version 1.2.1 build 74\
+- re-enable Tap->Go crash recovery logic\
+- improve crash reporting\
+\
+version 1.2.1 build 73\
+- re-enable the CIContext mutex\
+\
+version 1.2.1 build 72\
+- fix crash logs\
+- tighten up some memory usage with stylet preflight code\
+\
+version 1.2.1 build 70 (AppStore), build 71 (Alpha)\
+- bugfix version to ship to AppStore\
+\
+version 1.2.1 build 69\
+- Tidy up undead zombie thumbnail renderers\
+\
+version 1.2.1 build 68\
+- Keep around TWO expensive graphics contexts (instead of just ONE)\
+\
+version 1.2.1 build 67\
+- Keep around fewer expensive graphics contexts (may improve crashiness)\
+\
+version 1.2.1 build 66\
+- Fix FB integration IDs\
+\
+version 1.2.1 build 65\
+- Putative fixes for some memory exhaustion problems\
+- Fix for Old Skool "grey corner" bug on iPhone 4\
+\
+version 1.2.0 build 61 (Alpha), build 64 (App Store)\
+- Remove the Rotate, Straighten, and Flip tool (not yet ready for release)\
+\
+version 1.2.0 build 59\
+- Fix build to include HockeyApp SDK\
+- Change Instagram hashtag to #pictapgo_app\
+- Improves refresh behavior on Pic screen ("missing thumbnails")\
+- Fixes lockup when using the in-app camera more than once\
+- Fixes crash when naming a recipe in low-memory conditions\
+\
+*version 1.2.0 BETA <build number goes here>*\
+\
+New Features\
+* Crop, Rotate, Straighten\
+* Eight new filters: six color, two black and white\
+* Help button on _Tap_ screen\
+* Full-size image rendering (limited by device hardware capabilities):\
+** iPhone 4: 2048x2048\
+** iPhone 4S, 5: 4096x4096\
+\
+Bug fixes\
+* Bug manifesting in transition from _Tap_ to _Go_ screen (not everyone saw this, but if you did, you saw it _a lot_)\
+* Fix orientation of images taken by in-app camera\
+* Fix for images sometimes not showing up in camera roll until app restarted\
+\
+version 1.2.0 build 52\
+- Fixes bugs\
+* Prevent reordering thumbnails in the Recipes/History/My Style sections\
+* Improve perceived performance (less chance of thumbnail spinners now)\
+- Known remaining bugs\
+* images added to camera view while PTG is running sometimes don't show up\
+* in crop: some combinations of rotation and straightening behave unexpectedly\
+\
+version 1.2.0 build 51\
+- Adds "400H" filter\
+- Fixes bugs\
+* in-app camera now saves with correct orientation\
+* preview and thumbnails now update correctly\
+\
+version 1.2.0 build 50\
+- Fixes various bugs\
+- Known remaining bugs\
+* orientation issues in crop screen (Geoff's working on these)\
+* in-app camera saves images with incorrect orientation metadata\
+\
+version 1.2.0 build 48\
+- Fix redo button brokenness\
+- Known bugs\
+  + sometimes thumbnail in-progress spinners don't refresh\
+    workaround: scroll those thumbnails offscreen and back\
+  + rotation in 90-degree increments not working yet\
+\
+version 1.2.0 build 47\
+- Crop and Rotate tools\
+- Full-size image rendering\
+  limited by device hardware: 2048x2048 iPhone 4, 4096x4096 iPhone 4S/5\
+- Reduce crashiness by reducing memory usage\
+- Known bugs we're still working on in this version\
+  + sometimes thumbnail in-progress spinners don't refresh\
+    workaround: scroll those thumbnails offscreen and back\
+  + the redo button usually causes the app to crash\
+  + rotation in 90-degree increments not working yet\
+\
+version 1.0.1 build 42\
+- Fix rotation of processed images captured via in-app camera (introduced in build 40)\
+\
+version 1.0.1 build 40\
+- Preserve geotags and other metadata\
+- bug fixes for various recipe renaming glitches\
+- bug fix for notification overlay sometimes not going away\
+\
+version 1.0.1 build 39\
+- Add "second tap, scroll down" help screen\
+- Adjust Appirater thresholds\
+- Adjust data sent to stats.pictapgo.com\
+\
+version 1.0.1 build 38\
+- Correct Facebook App ID\
+\
+version 1.0.1 build 37\
+- Switch from TestFlight to HockeyApp \
+- Add Appirater App Store rating encourager (won\'92t work until we\'92re in the App Store...) \
+- Improve one common source of crashes (out-of-memory) \
+- Improve debug logging, and try to make out-of-memory crashes easier to debug \
+\
+version 1.0.0 build 31\
+- First version shipped to the App Store\
+\
+version 1.0.0 build 20130221A\
+- Release Candidate #1 !!\
+- add Old Glory and SX-70 stylets; put +Contrast back in list\
+- change appearance of pross-crossessed 1 and 2; rename both\
+- fix shadows in Skinny Jeans to work as designed\
+\
+version 0.9.15 build 20130220A\
+- changed the look of the initial help screens\
+- added instructional text in recipe folder if no recipes created yet\
+- display spinner when still processing the image and trying to share/save it\
+- change default order of filters screen\
+- bug fixes (notably, Brooklyn BW should now run reliably)\
+\
+version 0.9.14 build 20130219A\
+- crop image correctly in PTG if cropped via Apple's camera roll\
+- miscellaneous other bug fixes\
+\
+version 0.9.13 build 20130218A\
+- stylet reordering crashing bug fixed\
+- renamed some stylets\
+    * Vibrance > Sweet Tooth\
+    * Bullet Tooth > Bleached\
+    * removed Exposure +\'bd, Exposure -\'bd\
+    * removed Portland (too similar to High Fives)\
+- folder buttons no longer prevent scrolling of the thumbnail grid\
+- bug fixes\
+\
+version 0.9.12 build 20130215A\
+- removed extra files to slim down the app size\
+- fixed a bunch of bugs related to Go screen and saving recipes\
+- better importing of recipes\
+- other bug fixes\
+\
+version 0.9.11 build 20130214A\
+- save photos to PicTapGo album\
+- improved Metropolis\
+- new initial help screens when first entering screen (Pic, Tap, or Go)\
+- new art for the About screen\
+- removed photo stream photos from the All Photos list, but keep the albums in the Albums list\
+- added Copy Recipe to Clipboard as option when long press on recipe in preview grid\
+- fix Twitter bugs\
+- bug fixes\
+\
+version 0.9.10 build 20130212A\
+- added new filters - Simple BW, Brooklyn BW\
+- fixed AutoColor\
+- support for opening photos from Photo Streams (iCloud)\
+- long press gesture timing for preview and recipes is now different\
+- fixed flashing image bug when entering Tap screen\
+- added message when trying to Open In other apps but none installed able to open JPEG files\
+- added message when trying to share using Instagram but Instagram not installed\
+- large image file sent to clipboard and Open In destinations\
+- new icon\
+- bug fixes\
+\
+version 0.9.9 build 20130211C\
+- fix for bug with stylet names overwriting each other\
+\
+version 0.9.9 build 20130211B\
+- added simple folder bar to the initial run\
+- more fixes for animation\
+- adjusted timing of long pressure gestures\
+\
+version 0.9.9 build 20130211A\
+- removed the filter page control\
+- changed the long press gesture on preview behavior (left side = original, right side = previous)\
+- added a black alpha background when displaying messages & adjusted the timing\
+- adjusted preview spacing and styling on Tap & Go\
+- fixed jumping bug on iPhone 5s (and better implementation for others)\
+\
+version 0.9.8 build 20130208A\
+- new filters (Shadows, Highlights, Exposure +1/2, Exposure -1/2, Vibrance, Dot Screen, Pross-Crossessed 1, Process Crossessed 2)\
+- filters applied display below the preview\
+- new layouts for first time run, no stylets applied\
+- new Reset Everything setting button\
+- new setting for behavior of long press gesture on preview (UI not complete)\
+- text overlay for long press gesture\
+- clean up of thumbnail corners\
+- renaming of recipes & history\
+- settings buttons working\
+- new art for Go screen\
+- improved implementation of "My Style" area\
+- bug fixes\
+\
+version 0.9.7 build 20130205B\
+- some performance improvement on iPhone 4\
+- some scrolling improvement on iPhone 4\
+- KNOWN ISSUE: thumbnail corners peek out beneath names\
+\
+version 0.9.6 build 20130204B\
+- new art for Go screen\
+- new Save Recipe screen\
+\
+version 0.9.5 build 20130201D\
+- experimental TestFlight distribution to newly registered device\
+\
+version 0.9.5 build 20130201C\
+- crash dump symbols for TestFlight\
+- behind-the-scenes: fix broken recipes (if any have snuck into the history)\
+- first version distributed from a machine other than Geoff's\
+\
+version 0.9.4 build 20130131C\
+- more support for TestFlight features\
+- better art for the Go screen\
+\
+version 0.9.4 build 20130131B\
+- more support for TestFlight features\
+- better art for the folderBar\
+\
+version 0.9.4 build 20130131A\
+- new folder bar to switch between stylet groupings (My Styles/Recipes/Filters)\
+- save your own recipe\
+- copy image to the pasteboard/clipboard\
+- Open In button on Go to send your photo to another JPEG aware app (like Squaready or Tumblr)\
+- better animations when loading thumbnail previews\
+- better animation doing undo/redo/reset between layers\
+- bug fixes (more to come)\
+\
+version 0.9.3 build 20130122A\
+- About screen now can switch between About & Help & Settings content (not fully implemented yet)\
+- better Strength slider presentation\
+- better art on the Go screen\
+- fixes for a few crashing bugs\
+\
+version 0.9.2 build 20130115A\
+- add spinners for stylets while being rendered\
+- refresh the Pic screen when iOS album contents change outside the app\
+- fix several stylets (e.g. Detroit) that were broken on iPhone 4 (worked fine on 4S and 5)\
+- fix Auto-Color stylet (Red and Blue channels swapped on all devices)\
+- improve performance in some areas (iPhone 4 is still kinda slow though)\
+- add experimental recipe codes in share message text\
+- fix rounded corners of stylet dragged around during reorder\
+- fixes a visual flash occurring when doing undo & redo\
+- smarter enabling & disabling of undo & redo buttons\
+- added "Photo Library" to the list of available albums\
+\
+version 0.9.1 build 20130111A\
+- new UI look and branding\
+- new stylets - Big Fives, Portland, Crispify\
+- Twitter button fixed and now useable\
+- version & build #'s added to About screen\
+- long press undo button to reset/removed reset button\
+- better memory usage\
+- more stable\
+\
+version 0.9.0 build 20130107A\
+- first version released to the rad people outside the company !!\
+}

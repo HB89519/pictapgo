@@ -1,0 +1,158 @@
+/*******************************************************************
+  RESET EVERYTHING
+*******************************************************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*******************************************************************
+  RESET EVERYTHING
+*******************************************************************/
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #FFE46B;
+  color: #4d4d4f;
+  font-size: 0.8em;
+  height: 100%;
+  line-height: 1.2em;
+}
+  
+h1, h2, h3 {
+  font-weight: bold;
+  margin: 1.5em 0 .2em 0;
+  clear: both;
+  line-height: 1.2em;
+}
+
+h1 { font-size: 1.8em; }
+h2 { font-size: 1.4em; }
+h3 { font-size: 1.2em; }
+
+p , .screenshot { margin: .6em 0 .6em 0; }
+
+a {
+  color: #ED174F;
+  font-style: italic;
+  text-decoration: none;
+}
+
+#header {
+  height: 24px;
+  padding: 20px;
+  background-color: #FFE46B;
+  background-image:url('tappy.png');
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position: right center;
+  position: relative;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+#header .mail_icon {
+  height: 1.2em;
+  margin-right: 10px;
+  position: relative;
+  top: 3px;
+}
+
+#content {
+  padding: 20px;
+  background-color: #FFFBED;
+}
+
+#content .navlink {
+  padding: 0 0 0 20px;
+}
+
+#content .first {
+  margin-top: 0;
+}
+
+#footer {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #FFE46B;
+  height: 20px;
+}
+
+#footer h1 a {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  color: #4d4d4f;
+}
+
+.screenshot {
+  width: 48%;
+  float: left;
+}
+
+.left {
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+}
+
+.right {
+  width: 48%;
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
+.backbutton {
+  width: 68px;
+  height: 20px;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 1.3em;
+}
+
+li {
+  padding: .4em;
+}
+

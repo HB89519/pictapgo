@@ -1,0 +1,38 @@
+//
+// Prefix header for all source files of the 'RadLab' target in the 'RadLab' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_6_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "DDLog.h"
+
+    #ifdef CONFIGURATION_AppStore
+      // TURN OFF FOR PRODUCTION !!!
+      #undef USE_UDID_FOR_BUG_TRACKER
+    #else
+      #ifndef __IPHONE_7_0
+        // Only available on pre-iOS7 SDKs
+        // enable use of device UDIDs in TestFlight (#undef to disable)
+        #define USE_UDID_FOR_BUG_TRACKER
+      #else
+        #undef USE_UDID_FOR_BUG_TRACKER
+      #endif
+    #endif
+
+    // Enable HockeyApp code
+    #define USE_HOCKEYAPP
+
+    // enable Appirater usage
+    #define USE_APPIRATER
+
+    // enable Facebook SDK usage
+    #define USE_FACEBOOKINTEGRATION
+
+#endif

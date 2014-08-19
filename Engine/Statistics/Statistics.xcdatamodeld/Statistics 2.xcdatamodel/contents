@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="2.0" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="12C60" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="TRNamedRecipe" representedClassName="TRNamedRecipe" syncable="YES">
+        <attribute name="builtin" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="recipe_code" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="recipe_name" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="TRShareHistory" representedClassName="TRShareHistory" syncable="YES">
+        <attribute name="share_destination" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" attributeType="Date" indexed="YES" syncable="YES"/>
+    </entity>
+    <entity name="TRUsageHistory" representedClassName="TRUsageHistory" syncable="YES">
+        <attribute name="recipe_code" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="timestamp" attributeType="Date" indexed="YES" syncable="YES"/>
+    </entity>
+    <fetchRequest name="fetchAllUserRecipes" entity="TRNamedRecipe" predicateString="builtin == 0"/>
+    <fetchRequest name="fetchNamedRecipeForCode" entity="TRNamedRecipe" predicateString="recipe_code == $RECIPE_CODE"/>
+    <elements>
+        <element name="TRNamedRecipe" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="TRShareHistory" positionX="72" positionY="99" width="128" height="75"/>
+        <element name="TRUsageHistory" positionX="295" positionY="72" width="128" height="75"/>
+    </elements>
+</model>

@@ -1,0 +1,57 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf390
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid101\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\margl1440\margr1440\vieww9000\viewh14000\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 Things to do when deploying\
+\
+Upload Beta version to HockeyApp\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural
+\ls1\ilvl0\cf0 {\listtext	1.	}Update the app version (e.g. 1.0.2) and build number (e.g. 42)\
+{\listtext	2.	}Build a 
+\i PicTapGo: Beta
+\i0  archive\
+{\listtext	3.	}
+\b Use HockeyApp Uploader
+\b0  to upload Beta Archive (this ensures dSYM files end up in the right place! Otherwise crash reports and stack traces are useless!)\
+{\listtext	4.	}Tag the Mercurial repo appropriately (e.g. "version 1.0.2 build 42")\
+{\listtext	5.	}Bump the build number 
+\i\b again
+\i0\b0  (e.g. 43) to help distinguish crashes during development from crashes on Beta test devices.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+Upload Release (Live) version to HockeyApp 
+\b and
+\b0  App Store\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural
+\ls2\ilvl0\cf0 {\listtext	1.	}In general, any Live version should always be 
+\i identical to a tested Beta version
+\i0 , except for the build number\
+{\listtext	2.	}Login to iTunes Connect, register a new version, and tell it to "prepare for upload". This step can be done at any time, but must be done before using "Distribute\'85" in Xcode\
+{\listtext	3.	}Update the 
+\i build
+\i0  number (e.g. 44). The 
+\i version number
+\i0  (e.g. 1.0.2) should be 
+\b the same
+\b0  as an equivalent beta version number\
+{\listtext	4.	}Build a 
+\i PicTapGo: App Store
+\i0  archive\
+{\listtext	5.	}
+\b Use HockeyApp Uploader
+\b0  to upload Live version archive to HockeyApp (into the PicTapGo "Live" app registered in HockeyApp)\
+{\listtext	6.	}Use Xcode "Distribute\'85" action (in the Organizer -> Archives panel) to upload the Archive to iTunes Connect.\
+{\listtext	7.	}Bump the build number 
+\i\b again
+\i0\b0  (e.g. 45) to help distinguish crashes during development from crashes in Live customer usage.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+The iTunes Connect Team Representative is responsible for setting permissions of other users of iTunes Connect. Chenin is our Team Representative. Once the Team Rep sets up a user as a Developer, that user can then upload new binaries to iTunes Connect.\
+\
+When uploading a binary to iTunes Connect, we usually set the "Hold for Developer Release" flag. We also deploy an equivalent Beta to HockeyApp for testing while the equivalent Live version is being reviewed by Apple. This makes it possible to assess (through Beta testing) whether the build really is ready, concurrent with the time Apple takes sitting on the binary waiting to review it.\
+}
